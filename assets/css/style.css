@@ -85,7 +85,7 @@ header nav ul li a {
     padding-right: 10px;
 }
 
-.main-content-div {
+.section-content-div {
     border-left: 3px solid var(--primary-color);
     padding-left: 30px;
 }
@@ -98,4 +98,55 @@ header nav ul li a {
 .about-me p {
     line-height: 1.4;
     padding-bottom: 20px;
+}
+
+.work {
+    display: flex;
+    padding: 40px 200px 0px 200px;
+}
+
+.work h2 {
+    padding-left: 15px;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    width: 100%;
+    gap: 10px;
+}
+
+.work-grid-item {
+    display: flex;
+    background-position: initial;
+    background-size: cover;
+    border: 3px solid var(--secondary-color);
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+.grid-item-label {
+    margin-top: auto;
+    margin-bottom: 20px;
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+
+.grid-item-label h4 {
+    font-size: 12px;
+}
+
+.run-buddy {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    background-image: url(../images/run-buddy.PNG);
+}
+
+.horiseon {
+    background-image: url(../images/horiseon.PNG);
+}
+
+.coming-soon {
+    background-image: url(../images/coming-soon.jpg);
 }
