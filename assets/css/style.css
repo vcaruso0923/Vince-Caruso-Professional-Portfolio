@@ -102,11 +102,7 @@ header nav ul li a {
 
 .work {
     display: flex;
-    padding: 40px 200px 0px 200px;
-}
-
-.work h2 {
-    padding-left: 15px;
+    padding: 40px 200px 0px 215px;
 }
 
 .work-grid {
@@ -153,7 +149,7 @@ header nav ul li a {
 
 .contact-me {
     display: flex;
-    padding: 40px 200px 0px 200px;
+    padding: 40px 200px 0px 105px;
 }
 
 .contact-me h2 {
