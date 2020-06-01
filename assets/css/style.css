@@ -238,6 +238,9 @@ header nav ul li a {
         margin-right: 60px;
     }
 
+    .grid-item-label {
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -250,6 +253,4 @@ header nav ul li a {
     .grid-item-label h3 {
         font-size: 14px;
     }
-
-    
 }
