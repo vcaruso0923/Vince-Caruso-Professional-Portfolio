@@ -154,9 +154,18 @@ header nav ul li a {
     background-image: url(../images/horiseon.PNG);
 }
 
-.coming-soon {
-    background-image: url(../images/coming-soon.jpg);
+.weather-dashboard {
+    background-image: url(../images/weather-dashboard.PNG);
 }
+
+.code-quiz {
+    background-image: url(../images/code-quiz.PNG);
+}
+
+.daily-planner {
+    background-image: url(../images/daily-planner.PNG);
+}
+
 
 .contact-me {
     display: flex;
