@@ -112,6 +112,7 @@ header nav ul li a {
     width: 100%;
     gap: 10px;
     padding-bottom: 10px;
+    overflow: scroll;
 }
 
 .work-grid-item {
@@ -180,6 +181,7 @@ header nav ul li a {
     justify-content: space-evenly;
     align-items: center;
     padding: 30px;
+    padding-left: 200px;
 }
 .contact-me ul li {
     padding: 5px;
@@ -232,7 +234,11 @@ header nav ul li a {
     .section-content-div {
         border-left: none;
         border-bottom: 1px solid var(--primary-color);
-}
+    }
+
+    .contact-me ul {
+        padding-left: 30px;
+    }
 
 @media screen and (max-width: 768px) {
 
