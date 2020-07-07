@@ -140,9 +140,13 @@ header nav ul li a {
     font-size: 12px;
 }
 
-.run-buddy {
+.covid-data {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
+    background-image: url(../images/covid-data.PNG);
+}
+
+.run-buddy {
     background-image: url(../images/run-buddy.PNG);
 }
 
