@@ -30,15 +30,25 @@ header a {
 }
 
 header h1 {
-    padding: 10px 10px 10px 100px;
+    padding: 0 0 0 100px;
     margin: 15px 0px;
     font-size: 36px;
     font-weight: 400;
 }
 
+header h1 .prevent-link-styles {
+    border: none;
+    text-decoration: none;
+}
+
 header h1 a {
     color: var(--secondary-color);
 }
+
+header h1 a:hover {
+    color: var(--tertiary-color);
+}
+
 
 header nav ul {
     display: flex;
@@ -54,6 +64,11 @@ header nav ul li {
     margin: 0px 5px;
     font-size: 20px;
     position: relative;
+}
+
+header nav ul li .prevent-link-styles {
+    border: none;
+    text-decoration: none;
 }
 
 header nav ul li a:hover {
@@ -265,6 +280,10 @@ header nav ul li a {
         border-bottom: 1px solid var(--secondary-color);
     }
 
+    header nav ul li:hover {
+        border-bottom: 1px solid var(--tertiary-color);
+    }
+
     header nav ul li::after {
         border: none;
     }
@@ -295,6 +314,10 @@ header nav ul li a {
     .contact-me ul li {
         border-bottom: 1px solid var(--secondary-color);
         margin: 20px 20px;
+    }
+
+    .contact-me ul li:hover {
+        border-bottom: 1px solid var(--tertiary-color);
     }
 
     .contact-me ul li::after {

@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vincent Caruso</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet"></head>
+</head>
 
 <body>
 
     <!--Header-->
     <header>
         <h1>
-            <a href="./index.html">Vincent Caruso</a>
+            <a class="prevent-link-styles" href="./index.html">Vincent Caruso</a>
         </h1>
         <nav>
             <!-- Unordered list element -->
             <ul>
                 <li>
-                    <a href="#work">Projects</a>
+                    <a class="prevent-link-styles" href="#work">Projects</a>
                 </li>
 
                 <li>
-                    <a href="#contact-me">Contact Me</a>
+                    <a class="prevent-link-styles" href="#contact-me">Contact Me</a>
                 </li>
 
-                 <li>
-                    <a href="./assets/images/resume.pdf" target="_blank">Resume</a>
+                <li>
+                    <a class="prevent-link-styles" href="./assets/images/resume.pdf" target="_blank">Resume</a>
                 </li>
             </ul>
         </nav>
@@ -34,84 +37,87 @@
 
     <!--Hero-->
     <section class="hero">
-        <img class="vince headshot" src="./assets/images/vince-headshot.jpg" alt="Vincent Caruso on a Beach in California"></img>
+        <img class="vince headshot" src="./assets/images/vince-headshot.jpg"
+            alt="Vincent Caruso on a Beach in California"></img>
         <div id="bio-wrapper">
-            <P id="bio-line-1">Hello, I'm Vince.</p>
-            <p class="bio-body">I'm a full-stack web developer.</p> 
+            <P id="bio-line-1">Hello, I'm Vince!</p>
+            <p class="bio-body">I'm a full-stack web developer.</p>
             <p class="bio-body">Have a look at some projects I've worked on.</p>
             <p class="bio-body">Feel free to reach out!</P>
         </div>
-    
     </section>
 
-        Work Section
-        <section id="work" class="work">
-            <div class="section-content-div work-grid">
-                
-                <a href="https://cvdatahub.com/" target="_blank" class="work-grid-item covid-data">
-                    <div class="grid-item-label">
-                        <h3>COVID Data Hub</h3>
-                        <h4>HTML/CSS/Javascript</h4>
-                    </div>
-                </a>
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="section-content-div work-grid">
 
-                <a href="https://vcaruso0923.github.io/run-buddy/" target="_blank" class="work-grid-item run-buddy">
-                    <div class="grid-item-label">
-                        <h3>Run Buddy</h3>
-                        <h4>HTML/CSS</h4>
-                    </div>
-                </a>
+            <a href="https://cvdatahub.com/" target="_blank" class="work-grid-item covid-data">
+                <div class="grid-item-label">
+                    <h3>COVID Data Hub</h3>
+                    <h4>HTML/CSS/Javascript</h4>
+                </div>
+            </a>
 
-                <a href="https://vcaruso0923.github.io/Accessible-Horiseon-Web-App/" target="_blank" class="work-grid-item horiseon">
-                    <div class="grid-item-label">
-                        <h3>Horieseon</h3>
-                        <h4>HTML/CSS</h4>
-                    </div>
-                </a>
-                
+            <a href="https://vcaruso0923.github.io/run-buddy/" target="_blank" class="work-grid-item run-buddy">
+                <div class="grid-item-label">
+                    <h3>Run Buddy</h3>
+                    <h4>HTML/CSS</h4>
+                </div>
+            </a>
 
-                <a href="https://vcaruso0923.github.io/weather-dashboard/" target="_blank" class="work-grid-item weather-dashboard">
-                    <div class="grid-item-label">
-                        <h3>Weather Dashboard</h3>
-                        <h4>HTML/CSS/Javascript</h4>
-                    </div>
-                </a>
+            <a href="https://vcaruso0923.github.io/Accessible-Horiseon-Web-App/" target="_blank"
+                class="work-grid-item horiseon">
+                <div class="grid-item-label">
+                    <h3>Horieseon</h3>
+                    <h4>HTML/CSS</h4>
+                </div>
+            </a>
 
-                <a href="https://vcaruso0923.github.io/Code-Quiz/" target="_blank" class="work-grid-item code-quiz">
-                    <div class="grid-item-label">
-                        <h3>Coding Quiz</h3>
-                        <h4>HTML/CSS/Javascript</h4>
-                    </div>
-                </a>
 
-                <a href="https://vcaruso0923.github.io/Daily-Planner/" target="_blank" class="work-grid-item daily-planner">
-                    <div class="grid-item-label">
-                        <h3>Daily Planner</h3>
-                        <h4>HTML/CSS/Javascript</h4>
-                    </div>
-                </a>
-            </div>
-        </section>
+            <a href="https://vcaruso0923.github.io/weather-dashboard/" target="_blank"
+                class="work-grid-item weather-dashboard">
+                <div class="grid-item-label">
+                    <h3>Weather Dashboard</h3>
+                    <h4>HTML/CSS/Javascript</h4>
+                </div>
+            </a>
 
-        <!--Contact Me Section-->
-        <footer id="contact-me" class="contact-me">
-            <h2 class="left-side-h2"></h2>
-            <div>
-                <ul>
-                    <li>
-                        <a href="mailto:vinnycar0923@gmail.com">vinnycar0923@gmail.com</a>
-                    </li>
+            <a href="https://vcaruso0923.github.io/Code-Quiz/" target="_blank" class="work-grid-item code-quiz">
+                <div class="grid-item-label">
+                    <h3>Coding Quiz</h3>
+                    <h4>HTML/CSS/Javascript</h4>
+                </div>
+            </a>
 
-                    <li>
-                        <a href="https://github.com/vcaruso0923">GitHub</a>
-                    </li>
+            <a href="https://vcaruso0923.github.io/Daily-Planner/" target="_blank" class="work-grid-item daily-planner">
+                <div class="grid-item-label">
+                    <h3>Daily Planner</h3>
+                    <h4>HTML/CSS/Javascript</h4>
+                </div>
+            </a>
+        </div>
+    </section>
 
-                    <li>
-                        <a href="https://www.linkedin.com/in/vincent-caruso-978902121/">LinkedIn</a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+    <!--Contact Me Section-->
+    <footer id="contact-me" class="contact-me">
+        <h2 class="left-side-h2"></h2>
+        <div>
+            <ul>
+                <li>
+                    <a href="mailto:vinnycar0923@gmail.com">vinnycar0923@gmail.com</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/vcaruso0923">GitHub</a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/vincent-caruso-978902121/">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
+
 </html>
