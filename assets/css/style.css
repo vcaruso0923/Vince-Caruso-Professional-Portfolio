@@ -5,15 +5,15 @@
 }
 
 :root {
-    --primary-color: #024e76;
+    --primary-color: rgb(25,26,29);
     --secondary-color: white;
-    --tertiary-color: rgb(25,26,29);
+    --tertiary-color: rgb(33,206,153);
 }
 
 body {
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
 }
 
 header {
@@ -22,7 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     position: top;
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
 }
 
 header a {
@@ -32,14 +32,12 @@ header a {
 header h1 {
     padding: 10px 10px 10px 100px;
     margin: 15px 0px;
-    background-color: var(--secondary-color);
-    color: var(--tertiary-color);
     font-size: 36px;
     font-weight: 400;
 }
 
 header h1 a {
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
 }
 
 header nav ul {
@@ -58,8 +56,12 @@ header nav ul li {
     position: relative;
 }
 
+header nav ul li a:hover {
+    color: var(--tertiary-color);
+}
+
 header nav ul li::after {
-    border-top: 3px solid var(--secondary-color);
+    border-top: 3px solid var(--tertiary-color);
     content: "";
     position: absolute;
     right: 99%;
@@ -78,7 +80,7 @@ header nav ul li a {
 }
 
 .hero {
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -86,16 +88,14 @@ header nav ul li a {
 }
 
 .hero img {
-    border-top: 1px solid var(--secondary-color);
-    border-left: 1px solid var(--secondary-color);
-    border-bottom: 2.5px solid var(--secondary-color);
-    border-right: 2.5px solid var(--secondary-color);
+    border: 2.5px solid var(--tertiary-color);
     border-radius: 2px;
     max-width: 24vw;
 }
 
 #bio-wrapper {
     color: white;
+    text-align: center;
 }
 
 #bio-line-1 {
@@ -106,6 +106,7 @@ header nav ul li a {
 
 .bio-body {
     font-size: 2vw;
+    padding-bottom: .5vw;
 }
 
 .work {
@@ -129,7 +130,7 @@ header nav ul li a {
     display: flex;
     background-position: initial;
     background-size: cover;
-    border: 3px solid var(--tertiary-color);
+    border: 3px solid var(--primary-color);
     text-decoration: none;
     color: var(--secondary-color);
     transition: 0.5s;
@@ -143,7 +144,7 @@ header nav ul li a {
 .grid-item-label {
     margin-top: auto;
     margin-bottom: 20px;
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
     padding: 10px;
 }
 
@@ -180,8 +181,8 @@ header nav ul li a {
 
 .contact-me {
     display: flex;
-    padding: 40px 200px 0px 165px;
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    justify-content: center;
 }
 
 .contact-me ul {
@@ -192,7 +193,7 @@ header nav ul li a {
     justify-content: space-evenly;
     align-items: center;
     padding: 30px;
-    padding-left: 200px;
+    font-size: 2vw;
 }
 .contact-me ul li {
     padding: 5px;
@@ -201,8 +202,12 @@ header nav ul li a {
     position: relative;
 }
 
+.contact-me ul li a:hover{
+    color: var(--tertiary-color);
+}
+
 .contact-me ul li::after {
-    border-top: 3px solid var(--secondary-color);
+    border-top: 3px solid var(--tertiary-color);
     content: "";
     position: absolute;
     right: 99%;
@@ -239,15 +244,6 @@ header nav ul li a {
         padding: 0px 20px;
     }
 
-    header nav ul li {
-        font-size: 15px;
-        border-bottom: 1px solid var(--secondary-color);
-    }
-
-    header nav ul li::after {
-        border: none;
-    }
-
     .hero img {
         margin-left: 100px;
     }
@@ -257,37 +253,20 @@ header nav ul li a {
         margin-right: 50px;
     }
 
-    .about-me, .contact-me, .work {
-        padding: 20px 50px;
-        display: block;
-    }
-
-    .about-me h2, .contact-me h2, .work h2 {
-        text-align: center;
-    }
-
-    .section-content-div {
-        border-left: none;
-        border-bottom: 1px solid var(--primary-color);
-    }
-
-    .contact-me ul {
-        padding-left: 30px;
-    }
-
-    .contact-me ul li {
-        border-bottom: 1px solid var(--secondary-color);
-    }
-
-    .contact-me ul li::after {
-        border: none;
-    }
-
 @media screen and (max-width: 768px) {
 
     header {
         display: block;
         text-align: center;
+    }
+
+    header nav ul li {
+        font-size: 15px;
+        border-bottom: 1px solid var(--secondary-color);
+    }
+
+    header nav ul li::after {
+        border: none;
     }
 
     .hero img {
@@ -300,8 +279,26 @@ header nav ul li a {
         margin-right: 60px;
     }
 
+    .bio-body {
+        font-size: 16px;
+    }
+
     .grid-item-label {
         padding: 5px;
+    }
+
+    .contact-me ul {
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .contact-me ul li {
+        border-bottom: 1px solid var(--secondary-color);
+        margin: 20px 20px;
+    }
+
+    .contact-me ul li::after {
+        border: none;
     }
 }
 
@@ -315,15 +312,13 @@ header nav ul li a {
     .hero {
         display: block;
         text-align: center;
+        padding: 5px;
     }
 
     #bio-line-1 {
         font-size: 20px;
     }
 
-    .bio-body {
-        font-size: 15px;
-    }
 
     .work-grid {
         grid-template-rows: 75px;
@@ -331,15 +326,11 @@ header nav ul li a {
     }
 
     .grid-item-label h3 {
-        font-size: 14px;
-    }
-
-    .contact-me ul {
-        padding: 0;
+        font-size: 16px;
     }
     
     .contact-me ul li {
-        margin: 10px 60px;
+        margin: 10px 100px;
     }
 
 
