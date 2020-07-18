@@ -134,15 +134,26 @@ header nav ul li a {
     align-items: center;
     justify-content: center;
     background-color: var(--secondary-color);
+    margin: 0 2vw;
 }
 
 .customs-for-cards {
     margin: 1vw;
     text-align: center;
+    background-color: rgb(25,26,29);
+    border: solid 2px var(--tertiary-color);
+}
+
+.card-body {
+    margin: 2vw 0;
+}
+
+.card-title {
+    color: var(--secondary-color);
 }
 
 .custom-button {
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     border-color: var(--primary-color);
     margin-top: 5px;
 }
@@ -260,10 +271,6 @@ header nav ul li a {
         font-size: 16px;
     }
 
-    .grid-item-label {
-        padding: 5px;
-    }
-
     .contact-me ul {
         padding: 0;
         font-size: 16px;
@@ -299,20 +306,8 @@ header nav ul li a {
     #bio-line-1 {
         font-size: 20px;
     }
-
-
-    .work-grid {
-        grid-template-rows: 75px;
-        padding: 0;
-    }
-
-    .grid-item-label h3 {
-        font-size: 16px;
-    }
     
     .contact-me ul li {
-        margin: 10px 100px;
+        margin: 10px 20px;
     }
-
-
 }
