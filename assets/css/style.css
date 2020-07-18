@@ -59,6 +59,10 @@ header nav ul {
     padding: 0px 80px;
 }
 
+header nav .header-ul {
+    margin-bottom: 0;
+}
+
 header nav ul li {
     padding: 5px 20px;
     margin: 0px 5px;
@@ -132,67 +136,21 @@ header nav ul li a {
     background-color: var(--secondary-color);
 }
 
-.work-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 150px);
-    width: 100%;
-    gap: 10px;
-    padding-bottom: 10px;
+.customs-for-cards {
+    margin: 1vw;
+    text-align: center;
 }
 
-.work-grid-item {
-    display: flex;
-    background-position: initial;
-    background-size: cover;
-    border: 3px solid var(--primary-color);
-    text-decoration: none;
-    color: var(--secondary-color);
-    transition: 0.5s;
-}
-
-.work-grid-item:hover {
-    background-color: yellow;
-    opacity: 80%;
-}
-
-.grid-item-label {
-    margin-top: auto;
-    margin-bottom: 20px;
+.custom-button {
     background-color: var(--primary-color);
-    padding: 10px;
+    border-color: var(--primary-color);
+    margin-top: 5px;
 }
 
-.grid-item-label h4 {
-    font-size: 12px;
+.custom-button:hover {
+    background-color: var(--tertiary-color);
+    border-color: var(--tertiary-color);
 }
-
-.covid-data {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-    background-image: url(../images/covid-data.PNG);
-}
-
-.run-buddy {
-    background-image: url(../images/run-buddy.PNG);
-}
-
-.horiseon {
-    background-image: url(../images/horiseon.PNG);
-}
-
-.weather-dashboard {
-    background-image: url(../images/weather-dashboard.PNG);
-}
-
-.code-quiz {
-    background-image: url(../images/code-quiz.PNG);
-}
-
-.daily-planner {
-    background-image: url(../images/daily-planner.PNG);
-}
-
 
 .contact-me {
     display: flex;
