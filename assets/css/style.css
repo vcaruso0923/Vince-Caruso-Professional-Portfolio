@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary-color: rgb(25,26,29);
+    --primary-color: rgb(25, 26, 29);
     --secondary-color: white;
-    --tertiary-color: rgb(33,206,153);
+    --tertiary-color: rgb(33, 206, 153);
 }
 
 body {
@@ -48,7 +48,6 @@ header h1 a {
 header h1 a:hover {
     color: var(--tertiary-color);
 }
-
 
 header nav ul {
     display: flex;
@@ -140,7 +139,7 @@ header nav ul li a {
 .customs-for-cards {
     margin: 1vw;
     text-align: center;
-    background-color: rgb(25,26,29);
+    background-color: rgb(25, 26, 29);
     border: solid 2px var(--tertiary-color);
 }
 
@@ -179,6 +178,7 @@ header nav ul li a {
     padding: 30px;
     font-size: 2vw;
 }
+
 .contact-me ul li {
     padding: 5px;
     margin: 20px 60px;
@@ -186,7 +186,7 @@ header nav ul li a {
     position: relative;
 }
 
-.contact-me ul li a:hover{
+.contact-me ul li a:hover {
     color: var(--tertiary-color);
 }
 
@@ -210,103 +210,82 @@ header nav ul li a {
     color: var(--secondary-color);
 }
 
-
 @media screen and (max-width: 980px) {
-
-
     header {
         display: block;
         text-align: center;
     }
-
     header h1 {
         font-size: 22px;
         padding: 10px;
     }
-
     header nav ul {
         padding: 0px 20px;
     }
-
     .hero img {
         margin-left: 100px;
     }
-
     .hero h2 {
         font-size: 20px;
         margin-right: 50px;
     }
+}
 
 @media screen and (max-width: 768px) {
-
     header {
         display: block;
         text-align: center;
     }
-
     header nav ul li {
         font-size: 15px;
         border-bottom: 1px solid var(--secondary-color);
     }
-
     header nav ul li:hover {
         border-bottom: 1px solid var(--tertiary-color);
     }
-
     header nav ul li::after {
         border: none;
     }
-
     .hero img {
         max-width: 200px;
         margin: 50px;
     }
-
     .hero h2 {
         font-size: 16px;
         margin-right: 60px;
     }
-
     .bio-body {
         font-size: 16px;
     }
-
     .contact-me ul {
         padding: 0;
         font-size: 16px;
     }
-
     .contact-me ul li {
         border-bottom: 1px solid var(--secondary-color);
         margin: 20px 20px;
     }
-
     .contact-me ul li:hover {
         border-bottom: 1px solid var(--tertiary-color);
     }
-
     .contact-me ul li::after {
         border: none;
     }
 }
 
 @media screen and (max-width: 575px) {
-
     header nav ul li {
         margin: 0;
         padding: 5px;
     }
-
     .hero {
         display: block;
         text-align: center;
         padding: 5px;
     }
-
     #bio-line-1 {
         font-size: 20px;
     }
-    
     .contact-me ul li {
         margin: 10px 20px;
     }
