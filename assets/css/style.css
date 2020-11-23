@@ -187,17 +187,7 @@ header nav ul li a {
     border: solid 4px var(--tertiary-color);
     background-position: center;
     background-size: cover;
-    opacity: 0.75;
 }
-
-.customs-for-cards:hover {
-    opacity: 1.0;
-}
-
-.customs-for-cards:hover .card-body {
-    opacity: 0.95;
-}
-
 
 .card-text-wrapper {
     text-align: left;
@@ -205,9 +195,8 @@ header nav ul li a {
 }
 
 .card-body {
-    margin: 2vw 0;
-    background-color: var(--primary-color);
-    opacity: 0;
+    margin: 2vw;
+    background-color: rgba(255, 255, 255, 0.9);
     border: solid 2px var(--tertiary-color);
     border-radius: 3px;
 ;}
