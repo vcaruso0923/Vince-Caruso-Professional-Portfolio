@@ -129,7 +129,8 @@ header nav ul li a {
     font-size: 4vw;
     padding-bottom: 1vw;
     margin: 0;
-    text-align: center;}
+    text-align: center;
+}
 
 .bio-body {
     font-size: 1.7vw;
@@ -178,6 +179,17 @@ header nav ul li a {
 
 .skills-ul {
     font-size: 1.8vw;
+    list-style: none;
+}
+
+.skills-ul li {
+    padding: 10px 0;
+}
+
+.skills-ul li::before {
+    content: "✅";
+    display: inline-block;
+    margin-right: 0.2rem;
 }
 
 .customs-for-cards {
@@ -199,7 +211,8 @@ header nav ul li a {
     background-color: rgba(255, 255, 255, 0.9);
     border: solid 2px var(--tertiary-color);
     border-radius: 3px;
-;}
+    ;
+}
 
 .card-title {
     color: var(--secondary-color);
@@ -288,7 +301,7 @@ header nav ul li a {
     color: var(--secondary-color);
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) {
     header {
         display: block;
         text-align: center;
@@ -300,21 +313,14 @@ header nav ul li a {
     header nav ul {
         padding: 0px 20px;
     }
-    /* .hero img {
-        margin-left: 100px;
-    } */
     .hero h2 {
         font-size: 20px;
         margin-right: 50px;
     }
-}
-
-@media screen and (max-width: 768px) {
     header {
         display: block;
         text-align: center;
         position: relative;
-        padding-bottom: 20px;
     }
     header nav ul li {
         font-size: 15px;
@@ -326,12 +332,13 @@ header nav ul li a {
     header nav ul li::after {
         border: none;
     }
-    .hero{
+    .hero {
         height: 85vh;
     }
     .hero img {
         max-width: 100%;
         margin: 0;
+        margin: 5vh 0;
     }
     .hero h2 {
         font-size: 16px;
@@ -339,6 +346,9 @@ header nav ul li a {
     }
     .bio-body {
         font-size: 16px;
+    }
+    .skills {
+        height: auto;
     }
     .contact-me ul {
         padding: 0;
@@ -357,6 +367,9 @@ header nav ul li a {
 }
 
 @media screen and (max-width: 575px) {
+    body {
+        width: 100vw;
+    }
     header nav ul li {
         margin: 0;
         padding: 5px;
@@ -364,11 +377,71 @@ header nav ul li a {
     .hero {
         text-align: center;
         padding-top: 25px;
+        width: 100vw;
+        text-align: center;
+    }
+    #bio-wrapper {
+        width: 85vw;
+    }
+    .bio-body {
+        width: 85vw;
+        align-self: center;
+        text-align: center;
+    }
+    #hello-tag {
+        margin-top: 10vh;
+    }
+    .hero img {
+        margin-top: 0 0 5vh 0;
+        max-width: 55vw;
     }
     .section-heading {
+        font-size: 24px;
+    }
+    #work {
+        width: 95vw;
+        margin: auto;
+    }
+    #skills {
+        width: 100vw;
+    }
+    #skills-container {
+        width: 100vw;
+    }
+    .skills-column {
+        width: 48vw;
+    }
+    .skills-heading {
         font-size: 20px;
+    }
+    .skills-ul li {
+        font-size: 16px;
     }
     .contact-me ul li {
         margin: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .skills-ul li::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #work {
+        width: 101vw;
+        padding: 0;
+    }
+    #projects-heading {
+        margin-top: 2.5vh;
+    }
+    .customs-for-cards {
+        width: 100vw;
+        border: none;
+        margin: 2.5vh 0;
+    }
+    .card-body {
+        width: 90vw;
     }
 }
